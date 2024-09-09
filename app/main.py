@@ -26,4 +26,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 # Botのトークンを設定
-bot.run('MTE3OTM0ODYwMDM1MDg1NTIyOA.G6jd6h.IG47yVRAHDObaT11DmYfwBHcMx6cKCtPWZEeSA')
+bot.run('MTI4MjYwNjEwMTU4OTkxNzc0OA.GK6ANi.zuA_inkZrCJpXcupENZw42o7g8gO_8HxTD4mS8')
