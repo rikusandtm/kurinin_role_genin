@@ -1,9 +1,10 @@
 import discord
 from discord.ext import commands
 
+TOKEN = os.environ.get("TOKEN")
 intents = discord.Intents.default()
 intents.message_content = True
-
+intents.voice_states = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
@@ -26,4 +27,5 @@ async def on_message(message):
     await bot.process_commands(message)
 
 # Botのトークンを設定
+server_thread()
 bot.run('MTI4MjYwNjEwMTU4OTkxNzc0OA.GK6ANi.zuA_inkZrCJpXcupENZw42o7g8gO_8HxTD4mS8')
