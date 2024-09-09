@@ -1,10 +1,11 @@
 import discord
 import dotenv
+import os
 
 from discord.ext import commands
 from server import server_thread
 
-TOKEN = os.environ.get("TOKEN")
+TOKEN = os.getenv('TOKEN')
 intents = discord.Intents.default()
 intents.message_content = True
 intents.voice_states = True
