@@ -1,5 +1,8 @@
 import discord
+import dotenv
+
 from discord.ext import commands
+from server import server_thread
 
 TOKEN = os.environ.get("TOKEN")
 intents = discord.Intents.default()
